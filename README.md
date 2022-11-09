@@ -1,35 +1,36 @@
-API desenvolvida durante curso DIO de linguagem C#
+## API desenvolvida durante curso DIO de linguagem C#
 
 
-Executar MVC
-dotnet watch run
+#### Criando API
+> dotnet new webapi
 
-Criando API
-dotnet new webapi
+#### Executar API
+> dotnet watch run
 
-Executar API
-dotnet watch run
+#### Instalar pacotes EntityFramework (pacotes que devem ser instalados a cada projeto se necessário)
+> dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
-Instalar pacotes EntityFramework (pacotes que devem ser instalados a cada projeto se necessário)
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-
-dotnet add package Microsoft.EntityFrameworkCore.Design
+> dotnet add package Microsoft.EntityFrameworkCore.Design
 
 
-Criando a migration (para criação de uma tabela no banco de dados)
-dotnet-ef migrations add CriacaoTabelaContato
+#### Criando a migration (para criação de uma tabela no banco de dados)
+> dotnet-ef migrations add CriacaoTabelaContato
 
-Aplicar a migration
-dotnet ef database update
-
-
-
-Se ainda não instalou o pacote Entity Framework. (Só instala uma vez, sua instalação é feita na máquina e não no projeto)
-dotnet tool install --global dotnet-ef
-
-Newtonsoft. JSON
-dotnet add package Newtonsoft.Json
+#### Aplicar a migration
+> dotnet ef database update 
 
 
-Colocar "Encrypt=False" no final da conexão na ConnectionStrings
-"ConexaoPadrao" : "Server=localhost\\sqlexpress; Initial Catalog=AgendaMvc; Integrated Security=True; Encrypt=False"
+<br>
+
+___
+
+
+#### Se ainda não instalou o pacote Entity Framework. (Só instala uma vez, sua instalação é feita na máquina e não no projeto)
+> dotnet tool install --global dotnet-ef
+
+#### Newtonsoft. JSON
+> dotnet add package Newtonsoft.Json
+
+
+#### Colocar "Encrypt=False" no final da conexão na ConnectionStrings
+> "ConexaoPadrao" : "Server=localhost\\sqlexpress; Initial Catalog=AgendaMvc; Integrated Security=True; Encrypt=False"
